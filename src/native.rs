@@ -4,11 +4,13 @@ use std::ffi::CStr;
 use std::ptr;
 use std::{collections::HashSet, ffi::CString, num::NonZeroU32};
 
+#[repr(C)]
 #[derive(Default)]
 struct Constants {
     max_label_length: i32,
 }
 
+#[repr(C)]
 pub struct Context {
     raw: native_gl::GlFns,
     extensions: HashSet<String>,

@@ -1,4 +1,5 @@
 /// A version number for a specific component of an OpenGL implementation
+#[repr(C)]
 #[derive(Clone, Eq, Ord, PartialEq, PartialOrd)]
 pub struct Version {
     pub major: u32,
